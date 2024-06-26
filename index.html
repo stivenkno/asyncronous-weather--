@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbxlSxh9UHcwsy4rt1sS9lLohdUIWq4ks&callback=initMap&libraries=places&v=weekly" async defer></script>
+    <link rel="stylesheet" href="./css/elements.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/generic.css">
+    <title>Weather app</title>
+  </head>
+  <body>
+    <main class="forecast">
+      <h1 class="forecast__title">Weather App</h1>
+      <section class="forecast__weather-container">
+       <h2 class="forecast__sub-title" id="place"></h2> 
+       <img class="forecast__image" src="" alt="weather icon" id="weather-image"> 
+       <h2 class="forecast__sub-title" id="weather-status"></h2> 
+        <ul class="forecast__information">
+          <li class="forecast__information-item">Humidity: <span id="humidity"></span>%</li>
+          <li class="forecast__information-item">Temperature: <span id="temperature"></span>°C</li>
+          <li class="forecast__information-item">Wind: <span id="wind"></span>km/h</li>
+        </ul>
+      </section>
+      <input class="forecast__input" type="text" name="search-map" value="" placeholder="Search here..." id="map-input">
+      <div class="forecast__map" id="map"></div>
+    </main>
+    <script src="src/index.js"></script> 
+  </body>
+</html>
